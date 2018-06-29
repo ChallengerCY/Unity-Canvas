@@ -1,7 +1,7 @@
 # Unity-Canvas
 
 ***Canvas***
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp在Unity中，所有的UI元素都绘制在Canvas下面,Canvas是一个携带Canvas组件的GameObject，所有的UI元素都是Canvas的子物体。创建一个UI元素(类似于 GameObject > UI > Image)，如果当前不存在Canvas，会自动创建一个Canvas，之前创建的UI元素则会成为当前Canvas的子物体。Canvas在场景视图中以矩形形状显示，这使得UI元素的定位可以变得简单，而不需要让游戏视图一直可见。Canvas可以使用EventSystem System来帮助实现Messaging System。
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在Unity中，所有的UI元素都绘制在Canvas下面,Canvas是一个携带Canvas组件的GameObject，所有的UI元素都是Canvas的子物体。创建一个UI元素(类似于 GameObject > UI > Image)，如果当前不存在Canvas，会自动创建一个Canvas，之前创建的UI元素则会成为当前Canvas的子物体。Canvas在场景视图中以矩形形状显示，这使得UI元素的定位可以变得简单，而不需要让游戏视图一直可见。Canvas可以使用EventSystem System来帮助实现Messaging System。
 
 **绘制元素的层级**
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UI元素在Canvas中的绘制顺序和在Hierarchy中相同，第一个元素绘制在第一位，紧接着绘制第二个，以此类推。如果两个UI覆盖，则后面的UI会覆盖前面的UI。想要改变UI元素的绘制顺序，只需要在Hierarchy面板中拖动他们来修改。绘制顺序同样可以通过脚本控制Transform component来进行改变:SetAsFirstSibling（第一个）, SetAsLastSibling（最后一个）, 还有 SetSiblingIndex（中间）。
